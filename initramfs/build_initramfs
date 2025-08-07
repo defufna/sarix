@@ -1,0 +1,3 @@
+#!/bin/bash
+
+gen_initramfs.sh -o initrd.cpio.gz ./initramfs.list

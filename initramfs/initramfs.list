@@ -1,0 +1,17 @@
+# This is a sample initramfs list file
+
+# Create necessary directories
+dir /bin 0755 0 0
+dir /dev 0755 0 0
+dir /etc 0755 0 0
+dir /lib 0755 0 0
+dir /proc 0755 0 0
+dir /sys 0755 0 0
+
+# Create the console device node
+nod /dev/console 0600 0 0 c 5 1
+
+# Copy busybox and create a symlink for /init
+file /bin/busybox /bin/busybox 0755 0 0
+slink /bin/sh /bin/busybox 777 0 0
+file /init ./init.sh  0777 0 0

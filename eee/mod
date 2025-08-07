@@ -1,0 +1,91 @@
+Module                  Size  Used by
+wlan_ccmp               9728  2 
+usbhid                 32128  0 
+hid                    38784  1 usbhid
+ipv6                  267780  8 
+i915                   32512  2 
+drm                    82452  3 i915
+cpufreq_conservative     8712  0 
+cpufreq_stats           7104  0 
+cpufreq_userspace       5284  0 
+cpufreq_powersave       2688  0 
+cpufreq_ondemand        9740  0 
+freq_table              5536  2 cpufreq_stats,cpufreq_ondemand
+dock                   11280  0 
+sbs                    15112  0 
+sbshc                   7680  1 sbs
+container               5632  0 
+iptable_filter          3840  0 
+ip_tables              14820  1 iptable_filter
+x_tables               16132  1 ip_tables
+aes_i586               33536  0 
+dm_crypt               15364  0 
+dm_mod                 62660  1 dm_crypt
+af_packet              23812  8 
+eeepc_acpi              8720  0 
+parport_pc             36260  0 
+lp                     12324  0 
+parport                37832  2 parport_pc,lp
+joydev                 13120  0 
+wlan_scan_sta          16000  1 
+ath_rate_sample        16128  1 
+evdev                  13056  9 
+snd_hda_intel         344856  1 
+snd_pcm_oss            42144  0 
+snd_mixer_oss          17920  1 snd_pcm_oss
+snd_pcm                78596  2 snd_hda_intel,snd_pcm_oss
+serio_raw               7940  0 
+psmouse                40336  0 
+snd_page_alloc         11400  2 snd_hda_intel,snd_pcm
+snd_hwdep              10500  1 snd_hda_intel
+ath_pci               249016  0 
+snd_seq_dummy           4868  0 
+pcspkr                  4224  0 
+wlan                  236400  5 wlan_ccmp,wlan_scan_sta,ath_rate_sample,ath_pci
+ath_hal               305376  3 ath_rate_sample,ath_pci
+atl2                   33176  0 
+battery                14212  0 
+snd_seq_oss            35584  0 
+video                  19856  0 
+output                  4736  1 video
+ac                      6916  0 
+snd_seq_midi            9376  0 
+snd_rawmidi            25760  1 snd_seq_midi
+snd_seq_midi_event      8320  2 snd_seq_oss,snd_seq_midi
+snd_seq                54224  6 snd_seq_dummy,snd_seq_oss,snd_seq_midi,snd_seq_midi_event
+snd_timer              24836  2 snd_pcm,snd_seq
+snd_seq_device          9612  5 snd_seq_dummy,snd_seq_oss,snd_seq_midi,snd_rawmidi,snd_seq
+button                  9232  0 
+iTCO_wdt               13092  0 
+iTCO_vendor_support     4868  1 iTCO_wdt
+snd                    56996  13 snd_hda_intel,snd_pcm_oss,snd_mixer_oss,snd_pcm,snd_hwdep,snd_seq_dummy,snd_seq_oss,snd_rawmidi,snd_seq,snd_timer,snd_seq_device
+soundcore               8800  1 snd
+shpchp                 34452  0 
+pci_hotplug            30880  1 shpchp
+intel_agp              25492  1 
+agpgart                34760  3 drm,intel_agp
+ext3                  136840  1 
+jbd                    48404  1 ext3
+mbcache                 9600  1 ext3
+usb_storage            73664  0 
+libusual               19108  1 usb_storage
+sg                     36880  0 
+sd_mod                 30720  2 
+pata_acpi               8320  0 
+ata_generic             8324  0 
+ahci                   28548  0 
+ata_piix               19588  1 
+libata                159344  4 pata_acpi,ata_generic,ahci,ata_piix
+scsi_mod              151436  4 usb_storage,sg,sd_mod,libata
+ehci_hcd               37900  0 
+uhci_hcd               27024  0 
+usbcore               146412  6 usbhid,usb_storage,libusual,ehci_hcd,uhci_hcd
+thermal                16796  0 
+processor              37384  2 thermal
+fan                     5636  0 
+fbcon                  42912  0 
+tileblit                3456  1 fbcon
+font                    9472  1 fbcon
+bitblit                 6784  1 fbcon
+softcursor              3072  1 bitblit
+fuse                   50708  1 
