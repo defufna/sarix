@@ -1,2 +1,3 @@
 bzImage
 initrd.cpio.gz
+target.tar
